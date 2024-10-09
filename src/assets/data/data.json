@@ -1,0 +1,37 @@
+{
+    "schema": {
+        "bio": {
+            "education": [
+                {
+                    "institution": "",
+                    "degree": "",
+                    "field_of_study": "",
+                    "start_date": "YYYY-MM-DD",
+                    "end_date": "YYYY-MM-DD",
+                    "location": ""
+                }
+            ],
+            "experiences": [
+                {
+                    "job_title": "",
+                    "company": "",
+                    "start_date": "YYYY-MM-DD",
+                    "end_date": "YYYY-MM-DD",
+                    "highlights": [
+                        {
+                            "description": ""
+                        }
+                    ]
+                }
+            ],
+            "certifications": [
+                {
+                    "title": "",
+                    "issuing_institution": "",
+                    "issue_date": "YYYY-MM-DD",
+                    "expiration_date": "YYYY-MM-DD"
+                }
+            ]
+        }
+    }
+}
