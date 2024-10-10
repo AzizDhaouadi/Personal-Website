@@ -3,33 +3,179 @@
         "bio": {
             "education": [
                 {
-                    "institution": "",
-                    "degree": "",
-                    "field_of_study": "",
-                    "start_date": "YYYY-MM-DD",
-                    "end_date": "YYYY-MM-DD",
-                    "location": ""
+                    "institution": "Teccart Institute",
+                    "degree": "Diploma of Professional Studies in Technical Support",
+                    "field_of_study": "Information Technology",
+                    "start_date": "2018-10",
+                    "end_date": "2020-02",
+                    "location": "Montreal"
+                },
+                {
+                    "institution": "Education First International Language Campuses - London",
+                    "field_of_study": "English language and Literature, General",
+                    "start_date": "2015-12",
+                    "end_date": "2016-01",
+                    "location": "London"
+                },
+                {
+                    "institution": "Tunis Business School",
+                    "degree": "Bachelor of Science in Business Administration",
+                    "field_of_study": "Finance and International Political Economy",
+                    "start_date": "2015-09",
+                    "end_date": "2017-10",
+                    "location": "Tunis"
                 }
             ],
             "experiences": [
                 {
-                    "job_title": "",
-                    "company": "",
-                    "start_date": "YYYY-MM-DD",
-                    "end_date": "YYYY-MM-DD",
+                    "job_title": "Senior Web Traffic & Compliance Analyst",
+                    "company": "Coveo",
+                    "start_date": "2024-04",
+                    "end_date": "Present",
                     "highlights": [
                         {
                             "description": ""
+                        }
+                    ]
+                },
+                {
+                    "job_title": "Web Traffic & Compliance Analyst",
+                    "company": "Coveo",
+                    "start_date": "2023-03",
+                    "end_date": "2024-04",
+                    "highlights": [
+                        {
+                            "description": "Lead web analytics measurement planning for different web assets."
+                        },
+                        {
+                            "description": "Implement web analytics tracking technologies and ensure data accuracy and data integrity, including cookie consent implementations."
+                        },
+                        {
+                            "description": "Build dashboards visualizing buisiness KPIs & OKRs related to marketing efforts."
+                        },
+                        {
+                            "description": "Implement data stitching solutions to offer 360 view of the user journey."
+                        },
+                        {
+                            "description": "Analyze data tracking technologies to ensure compliance with data protection laws."
+                        }
+                    ]
+                },
+                {
+                    "job_title": "Senior Marketing Analyst",
+                    "company": "Flywheel Digital",
+                    "start_date": "2022-11",
+                    "end_date": "2023-03",
+                    "highlights": [
+                        {
+                            "description": "Lead web analytics measurement planning for clients to build a the most stuitable technology stack for tracking."
+                        },
+                        {
+                            "description": "Implemented web analytics tracking technologies for clients and ensured data accuracy, data integrity, including cookie consent implementations."
+                        },
+                        {
+                            "description": "Built dashboards visualizing business KPIs & OKRs related to marketing & product."
+                        },
+                        {
+                            "description": "Analyzed existing tracking implementations to ensure data is being captured correctlty avoid tracking debt."
+                        },
+                        {
+                            "description": "Consulted with external teams to provide strategic input on measuing SEO & Paid Advertising effects on KPIs."
+                        }
+                    ]
+                },
+                {
+                    "job_title": "Marketing Analytics Specialist",
+                    "company": "Flywheel Digital",
+                    "start_date": "2021-11",
+                    "end_date": "2022-11",
+                    "highlights": [
+                        {
+                            "description": "Built dashboards and delivered monthly, cross-channel performance reports with actionable insights."
+                        },
+                        {
+                            "description": "Implemented web tracking to measure business KPIs using Google Tag Manager, Segment, Mixpanel, and Google Analytics (Universal Analytics & GA4)"
+                        },
+                        {
+                            "description": "Analyzed web tracking implementations and optimized inefficiencies for better data fidelity and accuracy."
+                        },
+                        {
+                            "description": "Lead the migration to Google Analytics 4 for several implementations including E-commerce measurements."
+                        },
+                        {
+                            "description": "Collected requirements and lead the implementation of new tracking technologies for clients to improve product and user analytics."
+                        }
+                    ]
+                },
+                {
+                    "job_title": "Marketing Specialist",
+                    "company": "TrafficJunky",
+                    "start_date": "2020-03",
+                    "end_date": "2021-10",
+                    "highlights": [
+                        {
+                            "description": "Monitored performance across the different customer touchpoints using web analytics platforms."
+                        },
+                        {
+                            "description": "Generated user-focused content to help customers in their onboarding and nurture them to reduce churn."
+                        },
+                        {
+                            "description": "Planned data-driven retention strategies as well as partnerships to expand and main user base."
+                        },
+                        {
+                            "description": "Created, and documented new processes to faster access to relevant data across teams."
+                        },
+                        {
+                            "description": "Automated monotonous tasks for faster results and better time efficiency for the team."
+                        }
+                    ]
+                },
+                {
+                    "job_title": "Marketing Manager",
+                    "company": "Brossard App Design",
+                    "start_date": "2019-01",
+                    "end_date": "2020-03",
+                    "highlights": [
+                        {
+                            "description": "Increased the company's click-through rate by 30% through boosting organic ranking using technical and on-page Search Engine Optimization techniques."
+                        },
+                        {
+                            "description": "Increased the engagement site wide through on-page Search Engine Optimization techniques as well as user-centric content."
+                        },
+                        {
+                            "description": "Worked with the developers to implement a mobile-first design and development approach."
+                        },
+                        {
+                            "description": "Monitored and optimized website speed, content indexation and other company KPIs."
                         }
                     ]
                 }
             ],
             "certifications": [
                 {
-                    "title": "",
-                    "issuing_institution": "",
-                    "issue_date": "YYYY-MM-DD",
-                    "expiration_date": "YYYY-MM-DD"
+                    "title": "The Fundamentals of Digital Marketing",
+                    "issuing_institution": "Google",
+                    "issue_date": ""
+                },
+                {
+                    "title": "Responsive Web Design",
+                    "issuing_institution": "freeCodeCamp",
+                    "issue_date": ""
+                },
+                {
+                    "title": "SQL Fundamentals",
+                    "issuing_institution": "JetBrains",
+                    "issue_date": "2022-11"
+                },
+                {
+                    "title": "Google Analytics Individual Qualification",
+                    "issuing_institution": "Google",
+                    "issue_date": "2022-01"
+                },
+                {
+                    "title": "Google Analytics 4 Certification",
+                    "issuing_institution": "Google",
+                    "issue_date": ""
                 }
             ]
         }
