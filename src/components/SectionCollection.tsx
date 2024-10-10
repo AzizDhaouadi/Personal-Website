@@ -8,13 +8,16 @@ function SectionCollection() {
             spacing={4}
         >
 
-            <Section title="work" id="work">
+            <Section title="Work" id="work">
                 <Text>
-                    This section sums up the work
+                    Aziz is an entrepreneur and enthusiast developer based in Montreal with a passion for creating innovative digital solutions.
+                    He is passionate about building and launching products, with expertise ranging from data analytics and development to web design and solving complex business problems through code.
+                    When he's not immersed in tech, Aziz enjoys learning new languages and exploring various topics from AI to history.
+                    Currently, he runs Datakyu, where he publishes valuable content on data analysis and digital marketing.
                 </Text>
             </Section>
 
-            <Section title="timeline" id="timeline">
+            <Section title="Bio" id="bio">
                 <Text>
                     This section discribes experiences and education
                 </Text>
