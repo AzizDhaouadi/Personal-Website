@@ -14,12 +14,14 @@ function Certifications(certDetails: CertificationSectionProp) {
             variant='elevated'
             size={"lg"}
             height={"150px"}
+            bgColor={"inherit"}
+            borderColor={"gray.400"}
         >
             <CardBody>
                 <Flex flexDirection={"column"} gap={".5rem"}>
                     <Box>
                         <Flex flex={"row"} justifyContent={"space-between"} alignItems={"center"} gap={"2rem"}>
-                            <Heading textAlign={"start"} size='md'>{certDetails.title}</Heading>
+                            <Heading as={"h4"} textAlign={"start"} size='md'>{certDetails.title}</Heading>
                         </Flex>
                     </Box>
                     <Divider></Divider>

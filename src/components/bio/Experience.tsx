@@ -17,14 +17,16 @@ function Experience(exDetails: ExperienceSectionProps) {
         <Card
             direction={{ base: 'column', sm: 'row' }}
             overflow='hidden'
-            variant='elevated'
+            variant={"outline"}
             size={"lg"}
+            bgColor={"inherit"}
+            borderColor={"gray.400"}
         >
             <CardBody>
                 <Flex flexDirection={"column"} gap={".5rem"}>
                     <Box>
                         <Flex flexDirection={"row"} justifyContent={"space-between"} alignItems={"center"} gap={"2rem"}>
-                            <Heading size={"md"}>{exDetails.company}</Heading>
+                            <Heading as={"h3"} size={"md"}>{exDetails.company}</Heading>
                             <Text py='2'>
                                 {`${exDetails.start_date} / ${exDetails.end_date}`}
                             </Text>

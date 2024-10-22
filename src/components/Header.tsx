@@ -3,7 +3,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 function Header() {
     return (
-        <header>
+        <header className="header-styles">
             <nav>
                 <Container>
                     <Flex align="center" justify="space-between" wrap="wrap">

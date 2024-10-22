@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Container>
+      <Container my={"5rem"}>
         <Box>
           <Text>Hello, I am a professional working in Canada.</Text>
+          <Heading>Aziz Dhaouadi</Heading>
+          <Text>Digital Creator (Analyst, Developer, Entrepreneur)</Text>
         </Box>
-        <Heading>Aziz Dhaouadi</Heading>
-        <Text>Digital Creator (Analyst, Developer, Entrepreneur)</Text>
       </Container>
       <Container>
         <SectionCollection></SectionCollection>

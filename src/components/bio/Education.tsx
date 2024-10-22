@@ -15,22 +15,24 @@ function Education(edDetails: EducationSectionProp) {
         <Card
             direction={{ base: 'column', sm: 'row' }}
             overflow='hidden'
-            variant='elevated'
+            variant={"outline"}
             size={"lg"}
             height={"200px"}
+            bgColor={"inherit"}
+            borderColor={"gray.400"}
         >
             <CardBody>
 
                 <Flex flexDirection={"column"} gap={".5rem"}>
                     <Box>
                         <Flex flex={"row"} justifyContent={"space-between"} alignItems={"center"} gap={"2rem"}>
-                            <Heading size='md'>{edDetails.institution}</Heading>
+                            <Heading size='md' as={"h3"}>{edDetails.institution}</Heading>
                             <Text py='2'>
                                 {`${edDetails.start_date} / ${edDetails.end_date}`}
                             </Text>
                         </Flex>
                     </Box>
-                    <Divider></Divider>
+                    <Divider colorScheme={"whiteAlpha"}></Divider>
                     <Box>
                         <Flex flexDirection={"column"} alignItems={"self-start"} gap={".5rem"}>
                             {edDetails.degree ? <Text>{edDetails.degree}</Text> : <></>}

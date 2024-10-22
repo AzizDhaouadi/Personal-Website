@@ -8,6 +8,23 @@ html, body {
   min-width: 100%;
   padding: 2rem;
   text-align: center;
+  background: #F5F1E1;
+}
+
+h1, h2 {
+  color: #34495E;
+}
+
+h3 {
+  color: #34495E;
+}
+
+h4 {
+  color: #8DC183;
+}
+
+p {
+  color: #4A4A4A;
 }
 
 .logo {
@@ -22,6 +39,10 @@ html, body {
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.header-styles {
+  margin-bottom: 4rem;
+}
+
 
 @keyframes logo-spin {
   from {

@@ -54,40 +54,44 @@ function SectionCollection() {
         if (userDetails && userDetails.bio) {
             setBioSection(
                 <>
-                    <Heading as={"h3"} size='lg'>Education</Heading>
-                    {userDetails.bio.education.map((educationDetails: EducationType) => {
-                        return (
-                            <Box my={"2rem"} key={educationDetails.institution}>
-                                <Education
-                                    institution={educationDetails.institution}
-                                    degree={educationDetails.degree}
-                                    field_of_study={educationDetails.field_of_study}
-                                    start_date={educationDetails.start_date}
-                                    end_date={educationDetails.end_date}
-                                    location={educationDetails.location}
-                                ></Education>
-                            </Box>
-                        )
-                    })}
-                    <Heading as={"h3"} size='lg'>Experience</Heading>
-                    {userDetails.bio.experiences.map((experienceDetails: ExperienceType, index: number) => {
-                        return (
-                            <Box my={"2rem"} key={experienceDetails.company + index}>
-                                <Experience
-                                    job_title={experienceDetails.job_title}
-                                    company={experienceDetails.company}
-                                    start_date={experienceDetails.job_title}
-                                    end_date={experienceDetails.end_date}
-                                    highlights={experienceDetails.highlights}
-                                ></Experience>
-                            </Box>
-                        )
-                    })}
-                    <Heading as={"h3"} size='lg'>Certifications</Heading>
+                    <Heading as={"h2"} size={"lg"} textAlign={"start"} textDecoration={"underline"} mb={"3rem"}>Education</Heading>
+                    <VStack align='stretch'>
+                        {userDetails.bio.education.map((educationDetails: EducationType) => {
+                            return (
+                                <Box key={educationDetails.institution}>
+                                    <Education
+                                        institution={educationDetails.institution}
+                                        degree={educationDetails.degree}
+                                        field_of_study={educationDetails.field_of_study}
+                                        start_date={educationDetails.start_date}
+                                        end_date={educationDetails.end_date}
+                                        location={educationDetails.location}
+                                    ></Education>
+                                </Box>
+                            )
+                        })}
+                    </VStack>
+                    <Heading as={"h2"} size={"lg"} textAlign={"start"} textDecoration={"underline"} my={"3rem"}>Experience</Heading>
+                    <VStack align='stretch'>
+                        {userDetails.bio.experiences.map((experienceDetails: ExperienceType, index: number) => {
+                            return (
+                                <Box key={experienceDetails.company + index}>
+                                    <Experience
+                                        job_title={experienceDetails.job_title}
+                                        company={experienceDetails.company}
+                                        start_date={experienceDetails.start_date}
+                                        end_date={experienceDetails.end_date}
+                                        highlights={experienceDetails.highlights}
+                                    ></Experience>
+                                </Box>
+                            )
+                        })}
+                    </VStack>
+                    <Heading as={"h2"} size={"lg"} textAlign={"start"} textDecoration={"underline"} my={"3rem"}>Certifications</Heading>
                     <Flex direction={"row"} flexWrap={"wrap"} gap={".5rem"}>
                         {userDetails.bio.certifications.map((certificationDetails: CertificationsType, index: number) => {
                             return (
-                                <Box my={"1rem"} key={index} height={"170px"} width={"250px"}>
+                                <Box key={index} height={"170px"} width={"250px"}>
                                     <Certifications
                                         title={certificationDetails.title}
                                         issuing_institution={certificationDetails.issuing_institution}
@@ -126,10 +130,12 @@ function SectionCollection() {
         >
 
             <Section title="Work" id="work">
-                Aziz is an entrepreneur and enthusiast developer based in Montreal with a passion for creating innovative digital solutions.
-                He is passionate about building and launching products, with expertise ranging from data analytics and development to web design and solving complex business problems through code.
-                When he's not immersed in tech, Aziz enjoys learning new languages and exploring various topics from AI to history.
-                Currently, he runs Datakyu, where he publishes valuable content on data analysis and digital marketing.
+                <Text textAlign={"start"}>
+                    Aziz is an entrepreneur and enthusiast developer based in Montreal with a passion for creating innovative digital solutions.
+                    He is passionate about building and launching products, with expertise ranging from data analytics and development to web design and solving complex business problems through code.
+                    When he's not immersed in tech, Aziz enjoys learning new languages and exploring various topics from AI to history.
+                    Currently, he runs Datakyu, where he publishes valuable content on data analysis and digital marketing.
+                </Text>
             </Section>
 
             <Section title="Bio" id="bio">
