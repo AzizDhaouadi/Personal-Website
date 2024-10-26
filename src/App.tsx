@@ -1,5 +1,3 @@
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import { Heading, Text, Container, Box } from '@chakra-ui/react'
 import Header from './components/Header'
 import SectionCollection from './components/SectionCollection'

@@ -131,10 +131,7 @@ function SectionCollection() {
 
             <Section title="Work" id="work">
                 <Text textAlign={"start"}>
-                    Aziz is an entrepreneur and enthusiast developer based in Montreal with a passion for creating innovative digital solutions.
-                    He is passionate about building and launching products, with expertise ranging from data analytics and development to web design and solving complex business problems through code.
-                    When he's not immersed in tech, Aziz enjoys learning new languages and exploring various topics from AI to history.
-                    Currently, he runs Datakyu, where he publishes valuable content on data analysis and digital marketing.
+                    Aziz, an entrepreneur and self-taught developer in Montreal, has a talent for crafting digital solutions in data analytics, web development, and coding-driven business problem-solving. He currently runs Datakyu, where he shares insights on data and digital marketing. Beyond tech, Aziz enjoys learning languages and exploring subjects like AI and history.
                 </Text>
             </Section>
 
