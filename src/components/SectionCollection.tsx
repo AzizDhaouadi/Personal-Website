@@ -115,7 +115,8 @@ function SectionCollection() {
 
     useEffect(() => {
         const fetchData = () => {
-            const fetchedData = data.schema; // Assuming this returns the right structure
+            let fetchedData = userData;
+            fetchedData = data.schema; // Assuming this returns the right structure
             setUserData(fetchedData);
             handleBioSectionContent(fetchedData);
         };
