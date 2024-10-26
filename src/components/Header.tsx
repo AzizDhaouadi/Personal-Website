@@ -11,13 +11,13 @@ function Header() {
                             <Link>Home</Link>
                         </Center>
                         <Center>
-                            <Link isExternal>Blog <ExternalLinkIcon mx='2px' /></Link>
+                            <Link href="https://datajournal.datakyu.co/" isExternal>Blog <ExternalLinkIcon mx='2px' /></Link>
                         </Center>
                         <Center>
-                            <Link isExternal>Github<ExternalLinkIcon mx='2px' /></Link>
+                            <Link href="https://www.linkedin.com/in/aziz-dhaouadi/" isExternal>Github<ExternalLinkIcon mx='2px' /></Link>
                         </Center>
                         <Center>
-                            <Link isExternal>LinkedIn<ExternalLinkIcon mx='2px' /></Link>
+                            <Link href="https://github.com/AzizDhaouadi" isExternal>LinkedIn<ExternalLinkIcon mx='2px' /></Link>
                         </Center>
                     </Flex>
                 </Container>
