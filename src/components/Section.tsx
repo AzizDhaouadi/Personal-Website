@@ -11,7 +11,7 @@ type SectionProps = {
 function Section({ title, id, children }: SectionProps) {
 
     return (
-        <Container id={id} maxW="container.md" py={8}>
+        <Container id={id} maxW="container.md" py={4}>
             {title === 'Bio' ? <></> : <Heading as="h2" size={"lg"} textAlign={"start"} textDecoration={"underline"} my={"2rem"}>{title}</Heading>}
             {children}
         </Container >
