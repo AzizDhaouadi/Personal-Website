@@ -12,9 +12,9 @@ function Section({ title, id, children }: SectionProps) {
 
     return (
         <Container id={id} maxW="container.md" py={8}>
-            {title === 'Bio' ? <></> : <Heading as="h2" size={"lg"} textAlign={"start"} textDecoration={"underline"} mb={4}>{title}</Heading>}
+            {title === 'Bio' ? <></> : <Heading as="h2" size={"lg"} textAlign={"start"} textDecoration={"underline"} my={"2rem"}>{title}</Heading>}
             {children}
-        </Container>
+        </Container >
     )
 
 }

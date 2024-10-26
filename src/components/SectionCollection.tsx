@@ -5,7 +5,7 @@ import Experience from "./bio/Experience";
 import { ReactNode, useEffect, useState } from "react";
 import data from "../assets/data/data.json";
 import Certifications from "./bio/Certifications";
-
+import SocialLinks from "./socialLinks";
 
 type EducationType = {
     institution: string,
@@ -142,8 +142,8 @@ function SectionCollection() {
                 {bioSection}
             </Section>
 
-            <Section title="socialLinks" id="SocialLinks">
-                This section has the social links
+            <Section title="On the web" id="SocialLinks">
+                <SocialLinks></SocialLinks>
             </Section>
 
         </VStack>
