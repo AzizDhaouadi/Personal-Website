@@ -188,6 +188,11 @@
                     "title": "Google Analytics 4 Certification",
                     "issuing_institution": "Google",
                     "issue_date": ""
+                },
+                {
+                    "title": "dbt Fundamentals",
+                    "issuing_institution": "dbt Labs",
+                    "issue_date": "2024-12"
                 }
             ]
         }

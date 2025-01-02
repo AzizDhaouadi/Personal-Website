@@ -3,7 +3,6 @@ import { Card, CardBody, Heading, Text, Flex, Box, Divider } from "@chakra-ui/re
 type CertificationSectionProp = {
     title: string,
     issuing_institution: string,
-    issue_date: string
 }
 
 function Certifications(certDetails: CertificationSectionProp) {
