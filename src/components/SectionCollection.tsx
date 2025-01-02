@@ -95,7 +95,6 @@ function SectionCollection() {
                                     <Certifications
                                         title={certificationDetails.title}
                                         issuing_institution={certificationDetails.issuing_institution}
-                                        issue_date={certificationDetails.issue_date}
                                     >
                                     </Certifications>
                                 </Box>

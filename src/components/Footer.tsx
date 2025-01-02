@@ -5,7 +5,7 @@ function Footer() {
         <Box my={"1rem"}>
             <Center>
                 <Text>
-                    © 2024 Aziz Dhaouadi. All Rights Reserved.
+                    © 2025 Aziz Dhaouadi. All Rights Reserved.
                 </Text>
             </Center>
         </Box>

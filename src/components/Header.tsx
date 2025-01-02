@@ -14,10 +14,10 @@ function Header() {
                             <Link href="https://datajournal.datakyu.co/" isExternal>Blog <ExternalLinkIcon mx='2px' /></Link>
                         </Center>
                         <Center>
-                            <Link href="https://www.linkedin.com/in/aziz-dhaouadi/" isExternal>Github<ExternalLinkIcon mx='2px' /></Link>
+                            <Link href="https://www.linkedin.com/in/aziz-dhaouadi/" isExternal>LinkedIn<ExternalLinkIcon mx='2px' /></Link>
                         </Center>
                         <Center>
-                            <Link href="https://github.com/AzizDhaouadi" isExternal>LinkedIn<ExternalLinkIcon mx='2px' /></Link>
+                            <Link href="https://github.com/AzizDhaouadi" isExternal>Github<ExternalLinkIcon mx='2px' /></Link>
                         </Center>
                     </Flex>
                 </Container>
