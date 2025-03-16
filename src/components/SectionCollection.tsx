@@ -1,4 +1,4 @@
-import { VStack, StackDivider, Text, Heading, Box, Flex } from "@chakra-ui/react";
+import { VStack, StackDivider, Text, Heading, Box, Flex, HStack } from "@chakra-ui/react";
 import Section from "./Section";
 import Education from "./bio/Education";
 import Experience from "./bio/Experience";
@@ -43,11 +43,9 @@ type UserDetailsType = {
 }
 
 type BioSectionType = ReactNode | null;
-type UserDataType = UserDetailsType | {};
 
 function SectionCollection() {
 
-    const [userData, setUserData] = useState<UserDataType>({});
     const [bioSection, setBioSection] = useState<BioSectionType>(null);
 
     function handleBioSectionContent(userDetails: UserDetailsType | any) {
@@ -72,7 +70,7 @@ function SectionCollection() {
                         })}
                     </VStack>
                     <Heading as={"h2"} size={"lg"} textAlign={"start"} textDecoration={"underline"} my={"3rem"}>Experience</Heading>
-                    <VStack align='stretch'>
+                    <HStack align='stretch' wrap='wrap'>
                         {userDetails.bio.experiences.map((experienceDetails: ExperienceType, index: number) => {
                             return (
                                 <Box key={experienceDetails.company + index}>
@@ -86,7 +84,7 @@ function SectionCollection() {
                                 </Box>
                             )
                         })}
-                    </VStack>
+                    </HStack>
                     <Heading as={"h2"} size={"lg"} textAlign={"start"} textDecoration={"underline"} my={"3rem"}>Certifications</Heading>
                     <Flex direction={"row"} flexWrap={"wrap"} gap={".5rem"}>
                         {userDetails.bio.certifications.map((certificationDetails: CertificationsType, index: number) => {
@@ -114,9 +112,7 @@ function SectionCollection() {
 
     useEffect(() => {
         const fetchData = () => {
-            let fetchedData = userData;
-            fetchedData = data.schema; // Assuming this returns the right structure
-            setUserData(fetchedData);
+            let fetchedData = data.schema; // Assuming this returns the right structure
             handleBioSectionContent(fetchedData);
         };
 
