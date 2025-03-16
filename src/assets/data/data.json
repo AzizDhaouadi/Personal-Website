@@ -193,6 +193,16 @@
                     "title": "dbt Fundamentals",
                     "issuing_institution": "dbt Labs",
                     "issue_date": "2024-12"
+                },
+                {
+                    "title": "Databricks Fundamentals",
+                    "issuing_institution": "Databricks",
+                    "issue_date": "2025-01"
+                },
+                {
+                    "title": "Generative AI Fundamentals",
+                    "issuing_institution": "Databricks",
+                    "issue_date": "2025-01"
                 }
             ]
         }
