@@ -1,4 +1,4 @@
-import { VStack, StackDivider, Text, Heading, Box, Flex, HStack, Button, Image } from "@chakra-ui/react";
+import { VStack, Text, Heading, Box, Flex, HStack, Button, Image } from "@chakra-ui/react";
 import Section from "./Section";
 import Experience from "./bio/Experience";
 import { ReactNode, useEffect, useState } from "react";
