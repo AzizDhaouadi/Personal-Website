@@ -34,19 +34,19 @@
                     "end_date": "Present",
                     "highlights": [
                         {
-                            "description": "Plan, execute, and oversee the integration of advanced tracking technologies on the marketing website to enhance user insights and performance analytics."
+                            "description": "Develop and evolve 7+ integrated dashboards using Tableau and Sigma, unifying data from Salesforce, BrightEdge, and Marketo to empower marketing decision‐making with real‐time KPI visibility."
                         },
                         {
-                            "description": "Design and lead the implementation of data stitching solutions to deliver comprehensive insights into the user journey."
+                            "description": "Build and evolve 10+ production‐grade marketing data models in dbt and Snowflake, forming the backbone of my end‐to‐end analytics workflow—from modeling to visualization to insights."
                         },
                         {
-                            "description": "Extract, analyze, and visualize marketing performance data to provide actionable insights and support pipeline growth."
+                            "description": "Integrated Kaia (Outreach) sales transcript data into Amazon S3 in collaboration with Infrastructure, and built Python scripts to prepare weekly data for AI‐driven insights using ChatGPT."
                         },
                         {
-                            "description": "Drive the adoption of innovative tracking solutions to meet business objectives while ensuring regulatory compliance."
+                            "description": "Architect and implement advanced tracking integrations on the marketing website, linking GA4 and Marketo via Marketo ID, and enabling user‐level insights in Amplitude using the Marketo ID, MD5‐hashed email, Mutiny A/B test data, and 6sense API for company enrichment."
                         },
                         {
-                            "description": "Conduct thorough assessments of data tracking technologies to maintain strict compliance with data protection regulations."
+                            "description": "Documented the GA4 tracking infrastructure and delivered targeted training to the Business Value team, improving their ability to build accurate reports and interpret user behavior across key marketing datasets."
                         }
                     ]
                 },
@@ -57,19 +57,22 @@
                     "end_date": "2024-04",
                     "highlights": [
                         {
-                            "description": "Lead web analytics measurement planning for different web assets."
+                            "description": "Expanded the use of domain‐specific cookies to enable Salesforce reporting on MQLs acquired through search engines, improving attribution accuracy across the funnel."
                         },
                         {
-                            "description": "Implement web analytics tracking technologies and ensure data accuracy and data integrity, including cookie consent implementations."
+                            "description": "Planned and executed the migration to Google Analytics 4 across 6 subdomains, ensuring consistent measurement frameworks and unified user behavior tracking."
                         },
                         {
-                            "description": "Build dashboards visualizing buisiness KPIs & OKRs related to marketing efforts."
+                            "description": "Implemented and maintained marketing tracking infrastructure across 6sense, Munchkin, Amplitude, and ad platforms including Google Ads (Enhanced Conversions, Conversions for Leads), Bing Ads, Meta Ads, and LinkedIn Ads, enabling comprehensive campaign attribution and lead funnel visibility."
                         },
                         {
-                            "description": "Implement data stitching solutions to offer 360 view of the user journey."
+                            "description": "Engineered deterministic data stitching across GA4, Marketo, and Salesforce using the Marketo ID and lead ID, enabling full‐funnel visibility into which leads and contacts visited key pages across subdomains."
                         },
                         {
-                            "description": "Analyze data tracking technologies to ensure compliance with data protection laws."
+                            "description": "Oversaw OneTrust across 6 subdomains to ensure compliance with global data protection laws, including consent management, tracking enforcement, and reporting on newly detected cookies in collaboration with the legal team."
+                        }, 
+                        {
+                            "description": "Built 5 major dashboards in Looker Studio, including a 10+ page report covering Organic, YouTube, Product, and Search Console performance. Two dashboards were integrated into Sigma Computing to enable cross‐platform data exploration."
                         }
                     ]
                 },
@@ -118,49 +121,6 @@
                             "description": "Collected requirements and lead the implementation of new tracking technologies for clients to improve product and user analytics."
                         }
                     ]
-                },
-                {
-                    "job_title": "Marketing Specialist",
-                    "company": "TrafficJunky",
-                    "start_date": "2020-03",
-                    "end_date": "2021-10",
-                    "highlights": [
-                        {
-                            "description": "Monitored performance across the different customer touchpoints using web analytics platforms."
-                        },
-                        {
-                            "description": "Generated user-focused content to help customers in their onboarding and nurture them to reduce churn."
-                        },
-                        {
-                            "description": "Planned data-driven retention strategies as well as partnerships to expand and main user base."
-                        },
-                        {
-                            "description": "Created, and documented new processes to faster access to relevant data across teams."
-                        },
-                        {
-                            "description": "Automated monotonous tasks for faster results and better time efficiency for the team."
-                        }
-                    ]
-                },
-                {
-                    "job_title": "Marketing Manager",
-                    "company": "Brossard App Design",
-                    "start_date": "2019-01",
-                    "end_date": "2020-03",
-                    "highlights": [
-                        {
-                            "description": "Increased the company's click-through rate by 30% through boosting organic ranking using technical and on-page Search Engine Optimization techniques."
-                        },
-                        {
-                            "description": "Increased the engagement site wide through on-page Search Engine Optimization techniques as well as user-centric content."
-                        },
-                        {
-                            "description": "Worked with the developers to implement a mobile-first design and development approach."
-                        },
-                        {
-                            "description": "Monitored and optimized website speed, content indexation and other company KPIs."
-                        }
-                    ]
                 }
             ],
             "certifications": [
@@ -203,6 +163,11 @@
                     "title": "Generative AI Fundamentals",
                     "issuing_institution": "Databricks",
                     "issue_date": "2025-01"
+                },
+                {
+                    "title": "Python 3",
+                    "issuing_institution": "Codecademy",
+                    "issue_date": "2025-03"
                 }
             ]
         }
