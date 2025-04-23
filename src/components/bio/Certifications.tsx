@@ -10,7 +10,7 @@ function Certifications(certDetails: CertificationSectionProp) {
     return (
         <Card
             overflow='hidden'
-            variant='elevated'
+            variant='outline'
             size={"lg"}
             height={"150px"}
             bgColor={"inherit"}
