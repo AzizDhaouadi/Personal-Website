@@ -17,9 +17,7 @@ function App() {
             <Text>Digital Creator (Analyst, Developer, Entrepreneur)</Text>
           </Box>
         </Container>
-        <Container>
-          <SectionCollection></SectionCollection>
-        </Container>
+        <SectionCollection></SectionCollection>
       </main>
       <footer>
         <Footer></Footer>
