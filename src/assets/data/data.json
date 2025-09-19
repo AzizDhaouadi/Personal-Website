@@ -1,175 +1,204 @@
 {
-    "schema": {
-        "bio": {
-            "education": [
-                {
-                    "institution": "Teccart Institute",
-                    "degree": "Diploma of Professional Studies in Technical Support",
-                    "field_of_study": "Information Technology",
-                    "start_date": "2018-10",
-                    "end_date": "2020-02",
-                    "location": "Montreal"
-                },
-                {
-                    "institution": "Education First Campuses",
-                    "field_of_study": "English language and Literature",
-                    "start_date": "2015-12",
-                    "end_date": "2016-01",
-                    "location": "London"
-                },
-                {
-                    "institution": "Tunis Business School",
-                    "degree": "Bachelor of Science in Business Administration",
-                    "field_of_study": "Finance and International Political Economy",
-                    "start_date": "2015-09",
-                    "end_date": "2017-10",
-                    "location": "Tunis"
-                }
-            ],
-            "experiences": [
-                {
-                    "job_title": "Senior Web Traffic & Compliance Analyst",
-                    "company": "Coveo",
-                    "start_date": "2024-04",
-                    "end_date": "Present",
-                    "highlights": [
-                        {
-                            "description": "Develop and evolve 7+ integrated dashboards using Tableau and Sigma, unifying data from Salesforce, BrightEdge, and Marketo to empower marketing decision‐making with real‐time KPI visibility."
-                        },
-                        {
-                            "description": "Build and evolve 10+ production‐grade marketing data models in dbt and Snowflake, forming the backbone of my end‐to‐end analytics workflow—from modeling to visualization to insights."
-                        },
-                        {
-                            "description": "Integrated Kaia (Outreach) sales transcript data into Amazon S3 in collaboration with Infrastructure, and built Python scripts to prepare weekly data for AI‐driven insights using ChatGPT."
-                        },
-                        {
-                            "description": "Architect and implement advanced tracking integrations on the marketing website, linking GA4 and Marketo via Marketo ID, and enabling user‐level insights in Amplitude using the Marketo ID, MD5‐hashed email, Mutiny A/B test data, and 6sense API for company enrichment."
-                        },
-                        {
-                            "description": "Documented the GA4 tracking infrastructure and delivered targeted training to the Business Value team, improving their ability to build accurate reports and interpret user behavior across key marketing datasets."
-                        }
-                    ]
-                },
-                {
-                    "job_title": "Web Traffic & Compliance Analyst",
-                    "company": "Coveo",
-                    "start_date": "2023-03",
-                    "end_date": "2024-04",
-                    "highlights": [
-                        {
-                            "description": "Expanded the use of domain‐specific cookies to enable Salesforce reporting on MQLs acquired through search engines, improving attribution accuracy across the funnel."
-                        },
-                        {
-                            "description": "Planned and executed the migration to Google Analytics 4 across 6 subdomains, ensuring consistent measurement frameworks and unified user behavior tracking."
-                        },
-                        {
-                            "description": "Implemented and maintained marketing tracking infrastructure across 6sense, Munchkin, Amplitude, and ad platforms including Google Ads (Enhanced Conversions, Conversions for Leads), Bing Ads, Meta Ads, and LinkedIn Ads, enabling comprehensive campaign attribution and lead funnel visibility."
-                        },
-                        {
-                            "description": "Engineered deterministic data stitching across GA4, Marketo, and Salesforce using the Marketo ID and lead ID, enabling full‐funnel visibility into which leads and contacts visited key pages across subdomains."
-                        },
-                        {
-                            "description": "Oversaw OneTrust across 6 subdomains to ensure compliance with global data protection laws, including consent management, tracking enforcement, and reporting on newly detected cookies in collaboration with the legal team."
-                        }, 
-                        {
-                            "description": "Built 5 major dashboards in Looker Studio, including a 10+ page report covering Organic, YouTube, Product, and Search Console performance. Two dashboards were integrated into Sigma Computing to enable cross‐platform data exploration."
-                        }
-                    ]
-                },
-                {
-                    "job_title": "Senior Marketing Analyst",
-                    "company": "Flywheel Digital",
-                    "start_date": "2022-11",
-                    "end_date": "2023-03",
-                    "highlights": [
-                        {
-                            "description": "Lead web analytics measurement planning for clients to build a the most stuitable technology stack for tracking."
-                        },
-                        {
-                            "description": "Implemented web analytics tracking technologies for clients and ensured data accuracy, data integrity, including cookie consent implementations."
-                        },
-                        {
-                            "description": "Built dashboards visualizing business KPIs & OKRs related to marketing & product."
-                        },
-                        {
-                            "description": "Analyzed existing tracking implementations to ensure data is being captured correctlty avoid tracking debt."
-                        },
-                        {
-                            "description": "Consulted with external teams to provide strategic input on measuing SEO & Paid Advertising effects on KPIs."
-                        }
-                    ]
-                },
-                {
-                    "job_title": "Marketing Analytics Specialist",
-                    "company": "Flywheel Digital",
-                    "start_date": "2021-11",
-                    "end_date": "2022-11",
-                    "highlights": [
-                        {
-                            "description": "Built dashboards and delivered monthly, cross-channel performance reports with actionable insights."
-                        },
-                        {
-                            "description": "Implemented web tracking to measure business KPIs using Google Tag Manager, Segment, Mixpanel, and Google Analytics (Universal Analytics & GA4)"
-                        },
-                        {
-                            "description": "Analyzed web tracking implementations and optimized inefficiencies for better data fidelity and accuracy."
-                        },
-                        {
-                            "description": "Lead the migration to Google Analytics 4 for several implementations including E-commerce measurements."
-                        },
-                        {
-                            "description": "Collected requirements and lead the implementation of new tracking technologies for clients to improve product and user analytics."
-                        }
-                    ]
-                }
-            ],
-            "certifications": [
-                {
-                    "title": "The Fundamentals of Digital Marketing",
-                    "issuing_institution": "Google",
-                    "issue_date": ""
-                },
-                {
-                    "title": "Responsive Web Design",
-                    "issuing_institution": "freeCodeCamp",
-                    "issue_date": ""
-                },
-                {
-                    "title": "SQL Fundamentals",
-                    "issuing_institution": "JetBrains",
-                    "issue_date": "2022-11"
-                },
-                {
-                    "title": "Google Analytics Individual Qualification",
-                    "issuing_institution": "Google",
-                    "issue_date": "2022-01"
-                },
-                {
-                    "title": "Google Analytics 4 Certification",
-                    "issuing_institution": "Google",
-                    "issue_date": ""
-                },
-                {
-                    "title": "dbt Fundamentals",
-                    "issuing_institution": "dbt Labs",
-                    "issue_date": "2024-12"
-                },
-                {
-                    "title": "Databricks Fundamentals",
-                    "issuing_institution": "Databricks",
-                    "issue_date": "2025-01"
-                },
-                {
-                    "title": "Generative AI Fundamentals",
-                    "issuing_institution": "Databricks",
-                    "issue_date": "2025-01"
-                },
-                {
-                    "title": "Python 3",
-                    "issuing_institution": "Codecademy",
-                    "issue_date": "2025-03"
-                }
-            ]
+  "schema": {
+    "bio": {
+      "education": [
+        {
+          "institution": "Teccart Institute",
+          "degree": "Diploma of Professional Studies in Technical Support",
+          "field_of_study": "Information Technology",
+          "start_date": "2018-10",
+          "end_date": "2020-02",
+          "location": "Montreal"
+        },
+        {
+          "institution": "Education First Campuses",
+          "field_of_study": "English language and Literature",
+          "start_date": "2015-12",
+          "end_date": "2016-01",
+          "location": "London"
+        },
+        {
+          "institution": "Tunis Business School",
+          "degree": "Bachelor of Science in Business Administration",
+          "field_of_study": "Finance and International Political Economy",
+          "start_date": "2015-09",
+          "end_date": "2017-10",
+          "location": "Tunis"
         }
+      ],
+      "experiences": [
+        {
+          "job_title": "Business Value Analytics Advisor",
+          "company": "Coveo",
+          "start_date": "2025-05",
+          "end_date": "Present",
+          "highlights": [
+            {
+              "description": "Developed enterprise-wide dashboards in Snowflake, dbt, and Sigma, empowering Customer Success Managers to monitor revenue per visit, average order value, and conversion KPIs for Coveo Commerce clients, enhancing client engagement and business visibility."
+            },
+            {
+              "description": "Designed GA4-powered Looker Studio dashboards to measure pre- vs. post-Coveo implementation performance, enabling data-driven proof of business value and strengthening adoption conversations with stakeholders."
+            },
+            {
+              "description": "Migrated Business Value dashboards from Power BI to Sigma Computing, standardizing reporting processes and improving performance for Opportunity coverage tracking."
+            },
+            {
+              "description": "Built and demoed GA4-based business impact tracking on Coveo’s demo website using React, Coveo Headless, Google Tag Manager, and GA4 to measure search, listing, recommendations, and Generative Answering performance."
+            },
+            {
+              "description": "Acted as the technical advisor between the Business Value team and engineering, identifying opportunities for improved tracking architecture in Adobe Analytics, GA4, and Amplitude, resulting in faster insights and reduced technical debt."
+            },
+            {
+              "description": "Executed advanced SQL analyses (cohort modeling, incremental lift, time-series trends) to deliver actionable insights on customer behavior, marketing effectiveness, and ROI."
+            },
+            {
+              "description": "Troubleshot and optimized client Martech implementations (Google Tag Manager and GA4) to ensure reliable measurement of critical revenue and engagement metrics across digital properties."
+            }
+          ]
+        },
+        {
+          "job_title": "Senior Web Traffic & Compliance Analyst",
+          "company": "Coveo",
+          "start_date": "2024-04",
+          "end_date": "2025-05",
+          "highlights": [
+            {
+              "description": "Develop and evolve 7+ integrated dashboards using Tableau and Sigma, unifying data from Salesforce, BrightEdge, and Marketo to empower marketing decision‐making with real‐time KPI visibility."
+            },
+            {
+              "description": "Build and evolve 10+ production‐grade marketing data models in dbt and Snowflake, forming the backbone of my end‐to‐end analytics workflow—from modeling to visualization to insights."
+            },
+            {
+              "description": "Integrated Kaia (Outreach) sales transcript data into Amazon S3 in collaboration with Infrastructure, and built Python scripts to prepare weekly data for AI‐driven insights using ChatGPT."
+            },
+            {
+              "description": "Architect and implement advanced tracking integrations on the marketing website, linking GA4 and Marketo via Marketo ID, and enabling user‐level insights in Amplitude using the Marketo ID, MD5‐hashed email, Mutiny A/B test data, and 6sense API for company enrichment."
+            },
+            {
+              "description": "Documented the GA4 tracking infrastructure and delivered targeted training to the Business Value team, improving their ability to build accurate reports and interpret user behavior across key marketing datasets."
+            }
+          ]
+        },
+        {
+          "job_title": "Web Traffic & Compliance Analyst",
+          "company": "Coveo",
+          "start_date": "2023-03",
+          "end_date": "2024-04",
+          "highlights": [
+            {
+              "description": "Expanded the use of domain‐specific cookies to enable Salesforce reporting on MQLs acquired through search engines, improving attribution accuracy across the funnel."
+            },
+            {
+              "description": "Planned and executed the migration to Google Analytics 4 across 6 subdomains, ensuring consistent measurement frameworks and unified user behavior tracking."
+            },
+            {
+              "description": "Implemented and maintained marketing tracking infrastructure across 6sense, Munchkin, Amplitude, and ad platforms including Google Ads (Enhanced Conversions, Conversions for Leads), Bing Ads, Meta Ads, and LinkedIn Ads, enabling comprehensive campaign attribution and lead funnel visibility."
+            },
+            {
+              "description": "Engineered deterministic data stitching across GA4, Marketo, and Salesforce using the Marketo ID and lead ID, enabling full‐funnel visibility into which leads and contacts visited key pages across subdomains."
+            },
+            {
+              "description": "Oversaw OneTrust across 6 subdomains to ensure compliance with global data protection laws, including consent management, tracking enforcement, and reporting on newly detected cookies in collaboration with the legal team."
+            },
+            {
+              "description": "Built 5 major dashboards in Looker Studio, including a 10+ page report covering Organic, YouTube, Product, and Search Console performance. Two dashboards were integrated into Sigma Computing to enable cross‐platform data exploration."
+            }
+          ]
+        },
+        {
+          "job_title": "Senior Marketing Analyst",
+          "company": "Flywheel Digital",
+          "start_date": "2022-11",
+          "end_date": "2023-03",
+          "highlights": [
+            {
+              "description": "Lead web analytics measurement planning for clients to build a the most stuitable technology stack for tracking."
+            },
+            {
+              "description": "Implemented web analytics tracking technologies for clients and ensured data accuracy, data integrity, including cookie consent implementations."
+            },
+            {
+              "description": "Built dashboards visualizing business KPIs & OKRs related to marketing & product."
+            },
+            {
+              "description": "Analyzed existing tracking implementations to ensure data is being captured correctlty avoid tracking debt."
+            },
+            {
+              "description": "Consulted with external teams to provide strategic input on measuing SEO & Paid Advertising effects on KPIs."
+            }
+          ]
+        },
+        {
+          "job_title": "Marketing Analytics Specialist",
+          "company": "Flywheel Digital",
+          "start_date": "2021-11",
+          "end_date": "2022-11",
+          "highlights": [
+            {
+              "description": "Built dashboards and delivered monthly, cross-channel performance reports with actionable insights."
+            },
+            {
+              "description": "Implemented web tracking to measure business KPIs using Google Tag Manager, Segment, Mixpanel, and Google Analytics (Universal Analytics & GA4)"
+            },
+            {
+              "description": "Analyzed web tracking implementations and optimized inefficiencies for better data fidelity and accuracy."
+            },
+            {
+              "description": "Lead the migration to Google Analytics 4 for several implementations including E-commerce measurements."
+            },
+            {
+              "description": "Collected requirements and lead the implementation of new tracking technologies for clients to improve product and user analytics."
+            }
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "title": "The Fundamentals of Digital Marketing",
+          "issuing_institution": "Google",
+          "issue_date": ""
+        },
+        {
+          "title": "Responsive Web Design",
+          "issuing_institution": "freeCodeCamp",
+          "issue_date": ""
+        },
+        {
+          "title": "SQL Fundamentals",
+          "issuing_institution": "JetBrains",
+          "issue_date": "2022-11"
+        },
+        {
+          "title": "Google Analytics Individual Qualification",
+          "issuing_institution": "Google",
+          "issue_date": "2022-01"
+        },
+        {
+          "title": "Google Analytics 4 Certification",
+          "issuing_institution": "Google",
+          "issue_date": ""
+        },
+        {
+          "title": "dbt Fundamentals",
+          "issuing_institution": "dbt Labs",
+          "issue_date": "2024-12"
+        },
+        {
+          "title": "Databricks Fundamentals",
+          "issuing_institution": "Databricks",
+          "issue_date": "2025-01"
+        },
+        {
+          "title": "Generative AI Fundamentals",
+          "issuing_institution": "Databricks",
+          "issue_date": "2025-01"
+        },
+        {
+          "title": "Python 3",
+          "issuing_institution": "Codecademy",
+          "issue_date": "2025-03"
+        }
+      ]
     }
+  }
 }
