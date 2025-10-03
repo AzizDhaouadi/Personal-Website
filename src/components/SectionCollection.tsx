@@ -63,6 +63,13 @@ function SectionCollection() {
     resumeLink.click();
   }
 
+  function handleLoggingToAnalyticsQueue() {
+    (window as any).analyticsQueue = (window as any).analyticsQueue || [];
+    (window as any).analyticsQueue.push({
+      event: "download_resume",
+    });
+  }
+
   function handleBioSectionContent(userDetails: UserDetailsType | any) {
     if (userDetails && userDetails.bio) {
       setBioSection(
@@ -86,6 +93,7 @@ function SectionCollection() {
               onClick={() => {
                 handleDownloadButton();
                 vemetric.trackEvent("download_resume");
+                handleLoggingToAnalyticsQueue();
               }}
             >
               Download Resume
