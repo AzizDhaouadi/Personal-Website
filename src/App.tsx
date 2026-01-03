@@ -13,7 +13,7 @@ function App() {
           <Box>
             <Text>Hello, I am a professional working in Canada.</Text>
             <Heading>Aziz Dhaouadi</Heading>
-            <Text>Analyst, Developer, Entrepreneur</Text>
+            <Text>Analyst, Developer & Entrepreneur</Text>
           </Box>
         </Container>
         <SectionCollection></SectionCollection>
