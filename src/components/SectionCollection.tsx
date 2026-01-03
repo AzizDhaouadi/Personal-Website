@@ -195,34 +195,6 @@ function SectionCollection() {
         </Flex>
       </Section>
 
-      <Section title="Github Stats" id="github">
-        <Flex
-          direction={"row"}
-          justifyContent={"center"}
-          gap={"1rem"}
-          wrap={"wrap"}
-        >
-          <Image
-            maxW="100%"
-            width={"65%"}
-            src="https://github-readme-stats.vercel.app/api?username=AzizDhaouadi&theme=algolia&show_icons=true&hide_border=false&count_private=true"
-            alt="Aziz Dhaouadi Github Stats Overview"
-          ></Image>
-          <Image
-            maxW="100%"
-            width={"65%"}
-            src="https://github-readme-streak-stats.herokuapp.com/?user=AzizDhaouadi&theme=algolia&hide_border=false"
-            alt="Aziz Dhaouadi Github Streak Data"
-          ></Image>
-          <Image
-            maxW="100%"
-            width={"65%"}
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=AzizDhaouadi&theme=algolia&show_icons=true&hide_border=false&layout=compact"
-            alt="Aziz Dhaouadi Github Most Top User Languages"
-          ></Image>
-        </Flex>
-      </Section>
-
       <Section title="Bio" id="bio">
         {bioSection}
       </Section>
