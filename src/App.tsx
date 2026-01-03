@@ -1,9 +1,8 @@
-import { Heading, Text, Container, Box } from '@chakra-ui/react'
-import Header from './components/Header'
-import SectionCollection from './components/SectionCollection'
-import Footer from './components/Footer'
-import './App.css'
-
+import { Heading, Text, Container, Box } from "@chakra-ui/react";
+import Header from "./components/Header";
+import SectionCollection from "./components/SectionCollection";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
           <Box>
             <Text>Hello, I am a professional working in Canada.</Text>
             <Heading>Aziz Dhaouadi</Heading>
-            <Text>Digital Creator (Analyst, Developer, Entrepreneur)</Text>
+            <Text>Analyst, Developer, Entrepreneur</Text>
           </Box>
         </Container>
         <SectionCollection></SectionCollection>
@@ -23,8 +22,7 @@ function App() {
         <Footer></Footer>
       </footer>
     </>
-  )
+  );
+}
 
-};
-
-export default App
+export default App;
