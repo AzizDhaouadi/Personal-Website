@@ -58,8 +58,8 @@ function SectionCollection() {
 
   function handleDownloadButton() {
     const resumeLink = document.createElement("a");
-    resumeLink.href = "/src/assets/data/MAziz_Dhaouadi_Resume.pdf";
-    resumeLink.download = "/src/assets/data/MAziz_Dhaouadi_Resume.pdf";
+    resumeLink.href = "/MAziz_Dhaouadi_Resume.pdf";
+    resumeLink.download = "MAziz_Dhaouadi_Resume.pdf";
     resumeLink.click();
   }
 
