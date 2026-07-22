@@ -197,6 +197,21 @@
           "title": "Python 3",
           "issuing_institution": "Codecademy",
           "issue_date": "2025-03"
+        },
+        {
+          "title": "Data Analysis with Python",
+          "issuing_institution": "freeCodeCamp",
+          "issue_date": "2026-06"
+        },
+        {
+          "title": "Advanced Data Engineering with Snowflake",
+          "issuing_institution": "DataCamp",
+          "issue_date": "2026-06"
+        },
+        {
+          "title": "Build AI Applications with Steamlit",
+          "issuing_institution": "Codecademy",
+          "issue_date": "2026-05"
         }
       ]
     }
