@@ -1,35 +1,47 @@
-import { List, ListItem, Link, Flex } from "@chakra-ui/react";
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Steps, List, Link, Flex, Icon } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { ImBlog } from "react-icons/im";
+import { LuExternalLink } from 'react-icons/lu';
 
 
 function SocialLinks() {
     return (
-        <List spacing={"3"} textAlign={"left"}>
+        <List.Root gap={"3"} textAlign={"left"}>
             <Flex direction={"row"} gap={"2rem"}>
-                <ListItem>
-                    <Link href="https://datajournal.datakyu.co/" fontSize={"2xl"} isExternal>
-                        <ExternalLinkIcon boxSize={6} as={ImBlog} mx={"1rem"} />
+                <List.Item>
+                    <Link
+                        href="https://datajournal.datakyu.co/"
+                        fontSize={"2xl"}
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <Icon boxSize={6} as={ImBlog} mx={"1rem"} asChild><LuExternalLink /></Icon>
                         Blog
                     </Link>
-                </ListItem>
-                <ListItem>
-                    <Link href="https://www.linkedin.com/in/aziz-dhaouadi/" fontSize={"2xl"} isExternal>
-                        <ExternalLinkIcon boxSize={6} as={FaLinkedin} mx={"1rem"} />
+                </List.Item>
+                <List.Item>
+                    <Link
+                        href="https://www.linkedin.com/in/aziz-dhaouadi/"
+                        fontSize={"2xl"}
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <Icon boxSize={6} as={FaLinkedin} mx={"1rem"} asChild><LuExternalLink /></Icon>
                         LinkedIn
                     </Link>
-                </ListItem>
-                <ListItem>
-                    <Link href="https://github.com/AzizDhaouadi" fontSize={"2xl"} isExternal>
-                        <ExternalLinkIcon boxSize={6} as={FaGithub} mx={"1rem"} />
+                </List.Item>
+                <List.Item>
+                    <Link
+                        href="https://github.com/AzizDhaouadi"
+                        fontSize={"2xl"}
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <Icon boxSize={6} as={FaGithub} mx={"1rem"} asChild><LuExternalLink /></Icon>
                         Github
                     </Link>
-                </ListItem>
+                </List.Item>
             </Flex>
-        </List>
-    )
+        </List.Root>
+    );
 }
 
 

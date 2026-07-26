@@ -1,4 +1,4 @@
-import { Card, CardBody, Heading, Text, Flex, Box, Divider } from "@chakra-ui/react";
+import { Steps, Card, Heading, Text, Flex, Box, Separator } from "@chakra-ui/react";
 
 
 type EducationSectionProp = {
@@ -12,7 +12,7 @@ type EducationSectionProp = {
 
 function Education(edDetails: EducationSectionProp) {
     return (
-        <Card
+        <Card.Root
             direction={{ base: 'column', sm: 'row' }}
             overflow='hidden'
             variant={"outline"}
@@ -21,7 +21,7 @@ function Education(edDetails: EducationSectionProp) {
             bgColor={"inherit"}
             borderColor={"gray.400"}
         >
-            <CardBody>
+            <Card.Body>
 
                 <Flex flexDirection={"column"} gap={".5rem"}>
                     <Box>
@@ -32,7 +32,7 @@ function Education(edDetails: EducationSectionProp) {
                             </Text>
                         </Flex>
                     </Box>
-                    <Divider colorScheme={"whiteAlpha"}></Divider>
+                    <Separator colorPalette={"whiteAlpha"}></Separator>
                     <Box>
                         <Flex flexDirection={"column"} alignItems={"self-start"} gap={".5rem"}>
                             {edDetails.degree ? <Text>{edDetails.degree}</Text> : <></>}
@@ -41,9 +41,9 @@ function Education(edDetails: EducationSectionProp) {
                         </Flex>
                     </Box>
                 </Flex>
-            </CardBody>
-        </Card>
-    )
+            </Card.Body>
+        </Card.Root>
+    );
 }
 
 export default Education;

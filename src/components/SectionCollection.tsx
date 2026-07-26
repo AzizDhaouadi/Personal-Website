@@ -1,20 +1,10 @@
-import {
-  VStack,
-  Text,
-  Heading,
-  Box,
-  Flex,
-  HStack,
-  Button,
-  Image,
-} from "@chakra-ui/react";
+import { VStack, Text, Heading, Flex, Image, Tabs } from "@chakra-ui/react";
 import Section from "./Section";
 import Experience from "./bio/Experience";
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import data from "../assets/data/data.json";
-import Certifications from "./bio/Certifications";
-import SocialLinks from "./socialLinks";
 import { vemetric } from "@vemetric/react";
+import Certifications from "./bio/Certifications";
 
 type EducationType = {
   institution: string;
@@ -51,10 +41,11 @@ type UserDetailsType = {
   };
 };
 
-type BioSectionType = ReactNode | null;
-
 function SectionCollection() {
-  const [bioSection, setBioSection] = useState<BioSectionType>(null);
+  const [userBio, setUserBio] = useState(null);
+  const [activeInstitution, setActiveInstitution] = useState<string | null>(
+    "Google",
+  );
 
   function handleDownloadButton() {
     const resumeLink = document.createElement("a");
@@ -72,105 +63,27 @@ function SectionCollection() {
 
   function handleBioSectionContent(userDetails: UserDetailsType | any) {
     if (userDetails && userDetails.bio) {
-      setBioSection(
-        <>
-          <Heading
-            as={"h2"}
-            size={"lg"}
-            textAlign={"start"}
-            textDecoration={"underline"}
-            my={"3rem"}
-          >
-            Current Position
-          </Heading>
-          <Flex>
-            <Button
-              id="downloadResume"
-              variant={"outline"}
-              backgroundColor={"#6A8D92"}
-              color={"#fff"}
-              _hover={{}}
-              onClick={() => {
-                handleDownloadButton();
-                vemetric.trackEvent("download_resume");
-                handleLoggingToAnalyticsQueue();
-              }}
-            >
-              Download Resume
-            </Button>
-          </Flex>
-          <HStack align="stretch" wrap="wrap" mt={"2rem"}>
-            {userDetails.bio.experiences.map(
-              (experienceDetails: ExperienceType, index: number) => {
-                if (index === 0) {
-                  return (
-                    <Box key={experienceDetails.company + index}>
-                      <Experience
-                        job_title={experienceDetails.job_title}
-                        company={experienceDetails.company}
-                        start_date={experienceDetails.start_date}
-                        end_date={experienceDetails.end_date}
-                        highlights={experienceDetails.highlights}
-                      ></Experience>
-                    </Box>
-                  );
-                }
-              }
-            )}
-          </HStack>
-          <Heading
-            as={"h2"}
-            size={"lg"}
-            textAlign={"start"}
-            textDecoration={"underline"}
-            my={"3rem"}
-          >
-            Certifications
-          </Heading>
-          <Flex
-            gap={"20px"}
-            direction={"row"}
-            justify={"center"}
-            align={"center"}
-            wrap={"wrap"}
-          >
-            {userDetails.bio.certifications.map(
-              (certificationDetails: CertificationsType, index: number) => {
-                return (
-                  <Box key={index} height={"170px"} width={"250px"}>
-                    <Certifications
-                      title={certificationDetails.title}
-                      issuing_institution={
-                        certificationDetails.issuing_institution
-                      }
-                    ></Certifications>
-                  </Box>
-                );
-              }
-            )}
-          </Flex>
-        </>
-      );
-    } else {
-      setBioSection(
-        <>
-          <Text>Looks like I have been up to nothing all these years.</Text>
-        </>
-      );
+      return userDetails.bio;
     }
   }
 
   useEffect(() => {
     const fetchData = () => {
       const fetchedData = data.schema;
-      handleBioSectionContent(fetchedData);
+      const userDetails = handleBioSectionContent(fetchedData);
+      setUserBio(userDetails);
     };
 
     fetchData();
   }, []); // Run once on mount
 
+  const certificationInstitutions = userBio?.certifications.map(
+    (el: CertificationsType) => el["issuing_institution"],
+  );
+  const institutions = [...new Set(certificationInstitutions)];
+
   return (
-    <VStack spacing={2}>
+    <VStack>
       <Section title="Summary" id="work">
         <Text textAlign={"start"}>
           Aziz Dhaouadi is a self-taught developer and entrepreneur based in
@@ -196,11 +109,98 @@ function SectionCollection() {
       </Section>
 
       <Section title="Bio" id="bio">
-        {bioSection}
-      </Section>
-
-      <Section title="On the web" id="SocialLinks">
-        <SocialLinks></SocialLinks>
+        <>
+          <Heading
+            as="h2"
+            size={"3xl"}
+            textAlign={"start"}
+            textDecoration={"underline"}
+            my={"2rem"}
+          >
+            Experiences
+          </Heading>
+          {/* <Flex>
+            <Button
+              id="downloadResume"
+              variant={"outline"}
+              backgroundColor={"#6A8D92"}
+              color={"#fff"}
+              _hover={{}}
+              onClick={() => {
+                handleDownloadButton();
+                vemetric.trackEvent("download_resume");
+                handleLoggingToAnalyticsQueue();
+              }}
+            >
+              Download Resume
+            </Button>
+          </Flex> */}
+          <Flex
+            align="stretch"
+            wrap="wrap"
+            mt={"2rem"}
+            flexDirection={{ sm: "column", md: "column", lg: "row" }}
+            gap={"2rem"}
+            alignItems={"start"}
+            justifyContent={"center"}
+          >
+            {userBio?.experiences.map(
+              (experienceDetails: ExperienceType, index: number) => {
+                return (
+                  <Experience
+                    key={index}
+                    job_title={experienceDetails.job_title}
+                    company={experienceDetails.company}
+                    start_date={experienceDetails.start_date}
+                    end_date={experienceDetails.end_date}
+                    highlights={experienceDetails.highlights}
+                  ></Experience>
+                );
+              },
+            )}
+          </Flex>
+          <Heading
+            as="h2"
+            size={"3xl"}
+            textAlign={"start"}
+            textDecoration={"underline"}
+            my={"2rem"}
+          >
+            Certifications
+          </Heading>
+          <Tabs.Root
+            variant={"plain"}
+            value={activeInstitution}
+            onValueChange={(e) => setActiveInstitution(e.value)}
+          >
+            <Tabs.List flexWrap={"wrap"} gap={"1rem"}>
+              {institutions.map((el) => {
+                return (
+                  <Tabs.Trigger value={el as string}>
+                    {el as string}
+                  </Tabs.Trigger>
+                );
+              })}
+            </Tabs.List>
+            <Tabs.Content value={activeInstitution as string}>
+              <Flex wrap="wrap" gap="1rem" justify="center" py="1.5rem">
+                {userBio?.certifications
+                  .filter(
+                    (cert: CertificationsType) =>
+                      cert["issuing_institution"] == activeInstitution,
+                  )
+                  .map((el: CertificationsType) => (
+                    <Flex key={el.title}>
+                      <Certifications
+                        title={el.title}
+                        issuing_institution={el.issuing_institution}
+                      />
+                    </Flex>
+                  ))}
+              </Flex>
+            </Tabs.Content>
+          </Tabs.Root>
+        </>
       </Section>
     </VStack>
   );

@@ -5,13 +5,13 @@ import App from "./App.tsx";
 import "./index.css";
 
 // Importing Chakra
-import { ChakraProvider } from "@chakra-ui/react";
+import { Provider } from "@/components/ui/provider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <VemetricScript token="6mch6IFJUzmURIux" />
-    <ChakraProvider>
+    <Provider>
       <App></App>
-    </ChakraProvider>
-  </StrictMode>
+    </Provider>
+  </StrictMode>,
 );
