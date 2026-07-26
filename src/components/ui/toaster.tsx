@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import {
-  Steps,
   Toaster as ChakraToaster,
   Portal,
   Spinner,
@@ -13,7 +12,7 @@ import {
 export const toaster = createToaster({
   placement: "bottom-end",
   pauseOnPageIdle: true,
-})
+});
 
 export const Toaster = () => {
   return (
@@ -40,5 +39,5 @@ export const Toaster = () => {
         )}
       </ChakraToaster>
     </Portal>
-  )
-}
+  );
+};

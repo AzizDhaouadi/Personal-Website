@@ -3,12 +3,11 @@ import Section from "./Section";
 import Experience from "./bio/Experience";
 import { useEffect, useState } from "react";
 import data from "../assets/data/data.json";
-import { vemetric } from "@vemetric/react";
 import Certifications from "./bio/Certifications";
 
 type EducationType = {
   institution: string;
-  degree: string;
+  degree?: string;
   field_of_study: string;
   start_date: string;
   end_date: string;
@@ -34,42 +33,50 @@ type CertificationsType = {
 };
 
 type UserDetailsType = {
-  bio: {
-    education: EducationType[];
-    experience: ExperienceType[];
-    certifications: CertificationsType[];
+  education: EducationType[];
+  experiences: ExperienceType[];
+  certifications: CertificationsType[];
+};
+
+type AllUserDetailsType = {
+  schema: {
+    bio: {
+      education: EducationType[];
+      experiences: ExperienceType[];
+      certifications: CertificationsType[];
+    };
   };
 };
 
 function SectionCollection() {
-  const [userBio, setUserBio] = useState(null);
+  const [userBio, setUserBio] = useState<UserDetailsType>();
   const [activeInstitution, setActiveInstitution] = useState<string | null>(
     "Google",
   );
 
-  function handleDownloadButton() {
-    const resumeLink = document.createElement("a");
-    resumeLink.href = "/MAziz_Dhaouadi_Resume.pdf";
-    resumeLink.download = "MAziz_Dhaouadi_Resume.pdf";
-    resumeLink.click();
-  }
+  // function handleDownloadButton() {
+  //   const resumeLink = document.createElement("a");
+  //   resumeLink.href = "/MAziz_Dhaouadi_Resume.pdf";
+  //   resumeLink.download = "MAziz_Dhaouadi_Resume.pdf";
+  //   resumeLink.click();
+  // }
 
-  function handleLoggingToAnalyticsQueue() {
-    (window as any).analyticsQueue = (window as any).analyticsQueue || [];
-    (window as any).analyticsQueue.push({
-      event: "download_resume",
-    });
-  }
+  // function handleLoggingToAnalyticsQueue() {
+  //   (window as any).analyticsQueue = (window as any).analyticsQueue || [];
+  //   (window as any).analyticsQueue.push({
+  //     event: "download_resume",
+  //   });
+  // }
 
-  function handleBioSectionContent(userDetails: UserDetailsType | any) {
-    if (userDetails && userDetails.bio) {
-      return userDetails.bio;
+  function handleBioSectionContent(userDetails: AllUserDetailsType) {
+    if (userDetails) {
+      return userDetails.schema.bio;
     }
   }
 
   useEffect(() => {
     const fetchData = () => {
-      const fetchedData = data.schema;
+      const fetchedData = data;
       const userDetails = handleBioSectionContent(fetchedData);
       setUserBio(userDetails);
     };
