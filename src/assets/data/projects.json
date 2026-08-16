@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "title": "Google Analytics 4 Data Visualizer with Machine Learning",
+            "description": "Streamlit dashboard for GA4 channel performance, with a zero-shot 7-day revenue forecast from Amazon's Chronos-Bolt time-series foundation model.",
+            "tech_stack": ["Streamlit", "SQLite", "Python"],
+            "thumbnail_url": "public/projects/ga4_app.png",
+            "live_url": "https://ga4-data-visualizer-with-chronos-forecasting.streamlit.app",
+            "github_url": "https://github.com/AzizDhaouadi/streamlit-ga4-data-visualizer"
+        },
+        {
+            "title": "Google Analytics 4 Event Generator",
+            "description": "A browser tool that generates GA4 event tracking code from a form. Enter the event name and parameters, get a clean gtag() or dataLayer.push() snippet ready to paste.",
+            "tech_stack": ["React", "OpenAI", "Next.js"],
+            "thumbnail_url": "public/projects/ga4_event_gen.png",
+            "live_url": "https://www.datakyu.co/resources/generate-ga4-events"
+        }
+    ]
+}
