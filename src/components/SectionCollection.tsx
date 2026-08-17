@@ -114,10 +114,17 @@ function SectionCollection() {
     <VStack>
       <Section title="Summary" id="work">
         <Text textAlign={"start"}>
-          Aziz Dhaouadi is a self-taught developer and entrepreneur based in
-          Montreal, specializing in data analytics, web development, and digital
-          strategy. He leads Datakyu, a marketing analytics agency focused on
-          turning complex data into actionable insights.
+          Hi, I am Aziz! I am an analytics engineer based in Montreal, with a
+          full stack development experience. I work at the intersection of data
+          engineering (modelling and architecture with dbt and Snowflake),
+          analysis (Python, Streamlit, Sigma Computing), web application
+          development (React and Next.js), and web analytics (GA4, Amplitude,
+          and the rest of the event-based crowd). My day to day is writing code
+          until the sun sets. When it does, I become Batman. Really. Outside of
+          work I read a lot of manga and fantasy, and I play video games
+          (Pokémon above all), card games, and tennis.
+          <br />
+          よろしく!
         </Text>
       </Section>
 
