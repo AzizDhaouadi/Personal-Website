@@ -4,6 +4,8 @@ import Experience from "./bio/Experience";
 import { useEffect, useState } from "react";
 import data from "../assets/data/data.json";
 import Certifications from "./bio/Certifications";
+import projects from "../assets/data/projects.json";
+import ProjectCard from "./bio/ProjectCard";
 
 type EducationType = {
   institution: string;
@@ -48,8 +50,20 @@ type AllUserDetailsType = {
   };
 };
 
+type ProjectDetail = {
+  title: string;
+  description: string;
+  tech_stack: string[];
+  thumbnail_url: string;
+  live_url: string;
+  github_url?: string;
+};
+
 function SectionCollection() {
   const [userBio, setUserBio] = useState<UserDetailsType>();
+  const [userProjects, setUserProjects] = useState<ProjectDetail[] | null>(
+    null,
+  );
   const [activeInstitution, setActiveInstitution] = useState<string | null>(
     "Google",
   );
@@ -81,7 +95,14 @@ function SectionCollection() {
       setUserBio(userDetails);
     };
 
+    const fetchProjectData = () => {
+      const projectData = projects;
+      const projectDetails = projectData?.projects;
+      setUserProjects(projectDetails);
+    };
+
     fetchData();
+    fetchProjectData();
   }, []); // Run once on mount
 
   const certificationInstitutions = userBio?.certifications.map(
@@ -93,10 +114,17 @@ function SectionCollection() {
     <VStack>
       <Section title="Summary" id="work">
         <Text textAlign={"start"}>
-          Aziz Dhaouadi is a self-taught developer and entrepreneur based in
-          Montreal, specializing in data analytics, web development, and digital
-          strategy. He leads Datakyu, a marketing analytics agency focused on
-          turning complex data into actionable insights.
+          Hi, I am Aziz! I am an analytics engineer based in Montreal, with a
+          full stack development experience. I work at the intersection of data
+          engineering (modelling and architecture with dbt and Snowflake),
+          analysis (Python, Streamlit, Sigma Computing), web application
+          development (React and Next.js), and web analytics (GA4, Amplitude,
+          and the rest of the event-based crowd). My day to day is writing code
+          until the sun sets. When it does, I become Batman. Really. Outside of
+          work I read a lot of manga and fantasy, and I play video games
+          (Pokémon above all), card games, and tennis.
+          <br />
+          よろしく!
         </Text>
       </Section>
 
@@ -124,24 +152,31 @@ function SectionCollection() {
             textDecoration={"underline"}
             my={"2rem"}
           >
+            Projects
+          </Heading>
+          <Flex
+            align="stretch"
+            wrap="wrap"
+            mt={"2rem"}
+            flexDirection={{ sm: "column", md: "column", lg: "row" }}
+            gap={"2rem"}
+            alignItems={"start"}
+            justifyContent={"center"}
+          >
+            {userProjects?.map((project: ProjectDetail) => {
+              return <ProjectCard projectDetail={project} />;
+            })}
+          </Flex>
+
+          <Heading
+            as="h2"
+            size={"3xl"}
+            textAlign={"start"}
+            textDecoration={"underline"}
+            my={"2rem"}
+          >
             Experiences
           </Heading>
-          {/* <Flex>
-            <Button
-              id="downloadResume"
-              variant={"outline"}
-              backgroundColor={"#6A8D92"}
-              color={"#fff"}
-              _hover={{}}
-              onClick={() => {
-                handleDownloadButton();
-                vemetric.trackEvent("download_resume");
-                handleLoggingToAnalyticsQueue();
-              }}
-            >
-              Download Resume
-            </Button>
-          </Flex> */}
           <Flex
             align="stretch"
             wrap="wrap"
